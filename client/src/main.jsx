@@ -6,7 +6,7 @@ import { store, persistor } from "./redux/store.jsx";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <PersistGate persistor={personalbar}>
+  <PersistGate persistor={persistor}>
     <Provider store={store}>
       <App />
     </Provider>
